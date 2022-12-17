@@ -18,4 +18,4 @@ For specific, detailed instructions, look at the project instructions in the Uda
 
 ## Development
 
-I have added a fourth section in HTML and a scroll behaviour in CSS. I have created a navigation function that creates a new list to the upper bar whenever a new section is added in the HTML and navigates through the desired section upon selection. Also, a function that detects if a certain section is in view or not for the background animation.
+I have added a fourth section in HTML and a scroll behaviour in CSS. I have created a navigation function that creates a new list to the upper bar whenever a new section is added in the HTML and navigates through the desired section upon selection. Also, a function that detects if a certain section is in view/focus or not for the background animation.
