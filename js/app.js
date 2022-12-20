@@ -46,7 +46,17 @@ function navigation(){
         const createList = document.createElement('li');  // Create li elements in the navbar
         createList.innerHTML = `<a href="#${section.id}" class="menu__link">${section.dataset.nav}</a>`;  // Add HTML to list
         document.querySelector('#navbar__list').appendChild(createList);  // Add li elements to the ul parent
+        anchorScroll(createList, section);  // Add scroll behavior to anchor sections
         });
+        function anchorScroll(createList, section){  // Scroll behavior function declaration
+            createList.addEventListener('click', function(scroll){  // Click individual section to scroll
+                scroll.preventDefault();  // Prevent the default click handling
+                window.scrollTo({
+                    top: section.offsetTop,  // Scroll to the top of each section
+                    behavior:"smooth"  // Smooth scrolling
+                });
+            });
+        }        
     document.querySelector('.navbar__menu').appendChild(document.querySelector('#navbar__list'));  // Add the ul to the nav bar
 }
 
